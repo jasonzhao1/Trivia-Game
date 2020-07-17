@@ -402,7 +402,7 @@ input {
   bottom: 30px;
 }
 
-@media (min-width:2000px) and (min-height:600px) and (orientation:landscape){
+@media (min-width:1500px) and (min-height:600px) and (orientation:landscape){
   #select_type {
     font-size: 30px;
     font-weight: bold;
