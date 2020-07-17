@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia Game</title>
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <button class="example_e invisible" id="select_type" type="button" name="button">Select Questions</button>
+    <h1 class="middle_title" id="trivia_title">Trivia Game</h1>
+    <div class="menu" >
+      <h3>Choose combinations of difficulties</h3>
+      <button class="select_score default" type="button" name="submit">100</button>
+      <button class="select_score default" type="button" name="submit">200</button>
+      <button class="select_score default" type="button" name="submit">300</button>
+      <button class="select_score default" type="button" name="submit">400</button>
+      <button class="select_score default" type="button" name="submit">500</button>
+      <button class="select_score default" type="button" name="submit">600</button>
+      <button class="select_score default" type="button" name="submit">700</button>
+      <button class="select_score default" type="button" name="submit">800</button>
+      <button class="select_score default" type="button" name="submit">900</button>
+      <button class="select_score default" type="button" name="submit">1000</button>
+      <br>
+      <br>
+
+        <button class="example_b" id="selfChose" type="button" name="button">Finish Choosing</button>
+
+        <!-- <button type="submit" name="submit">Start the Game!</button> -->
+
+
+    <br><br><br>
+
+    <h2>Or</h2>
+    <button class="example_b" id="start_random" type="button" name="button">Get Randomized Questions</button>
+    <br>
+    <button class = "hid example_e" id = "start" type="button" name="button">Start!</button>
+    </div>
+
+    <div  class = "popup" id="content">
+
+
+        <h3 id="question">Question shows here</h3>
+
+        <div id="answer_area">
+          <p id="correctness">
+              
+          </p>
+          <input id="user_input" type="text" name = "userinput" placeholder="Enter your answer">
+          <button id="submit" type="button" name="button">Submit Answer</button>
+          <br>
+          <button id="show" class = "example_a" type="button" name="button">Show answer</button>
+
+
+        </div>
+
+
+         <div class="surround answer_class" id="surround">
+
+            <h3 class="answer_class" id="answer">Answer shows here</h3>
+         </div>
+
+
+
+        <!-- <button id = "btnNext" type="button" name="button"><span>Next Question</span></button> -->
+
+            <button  id = "btnNext" type="button" name="button">Next Question</button>
+
+
+
+
+
+        </div>
+
+
+  </div>
+
+
+  <script src="fetch2.js" charset="utf-8"></script>
+
+  </body>
+</html>
