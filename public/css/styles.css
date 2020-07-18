@@ -377,7 +377,9 @@ input {
 
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  background-color: #96bb7c;;
+  background-color: #FAF0AF;
+
+  border-color:black;
 
 }
 
@@ -566,6 +568,13 @@ input {
     margin: 20%;
   }
 
+  #start {
+    width: 25%;
+    height: 7vh;
+    font-size: 4vw;
+    font-weight:bold;
+  }
+
   #or {
     position: relative;
     top: 3vh;
@@ -584,10 +593,12 @@ input {
 
     #user_input {
       font-size:6vw;
+      height:10vw;
     }
 
     #submit {
       font-size:4vw;
+      height:10vw;
 
     }
 
@@ -617,10 +628,10 @@ input {
     }
 
     #select_type {
-      font-size: 4vw;
+      font-size: 3vw;
       font-weight: bold;
       width: 20%;
-      height: 120px;
+      height: 7vh;
       border-radius: 15px;
 
       display:block;
