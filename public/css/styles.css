@@ -13,11 +13,7 @@ footer {
 
 
 
-@media (max-width: 447px) {
-  h1 {
-    font-size: 6vw;
-  }
-}
+
 
 
 h1 {
@@ -402,7 +398,7 @@ input {
   bottom: 30px;
 }
 
-@media (min-width:1500px) and (min-height:600px) and (orientation:landscape){
+@media (min-width:1300px) and (min-height:600px) and (orientation:landscape){
   #select_type {
     font-size: 30px;
     font-weight: bold;
@@ -501,7 +497,7 @@ input {
   }
 }
 
-@media (max-width: 1300px) and (orientation:landscape) {
+@media (max-width: 1200px) and (orientation:landscape) {
   #btnNext {
     position: fixed;
     bottom: 10px;
@@ -533,4 +529,110 @@ input {
   }
 }
 
-/* score buttons */
+@media (min-height:700px) and (orientation: portrait) {
+
+  /* index.html */
+
+  #start_h {
+    font-size: 7vw;
+  }
+
+  #start_h2 {
+    font-size: 5vw;
+  }
+
+  #difficulty {
+    font-size: 6vw;
+  }
+
+  .select_score {
+    font-size: 4vw;
+    font-weight:bold;
+    height: 4vh;
+  }
+
+  .exp {
+    font-size: 4vw;
+  }
+
+  #selfChose{
+    width: 30%;
+    height: 10vw;
+  }
+
+  #start_random {
+    width: 40%;
+    height:10vw;
+    margin: 20%;
+  }
+
+  #or {
+    position: relative;
+    top: 3vh;
+  }
+    #question {
+      font-size:6vw;
+    }
+
+    #trivia_title {
+      font-size:7vw;
+      position: static;
+      left: 0;
+      margin:30px;
+      padding:0;
+    }
+
+    #user_input {
+      font-size:6vw;
+    }
+
+    #submit {
+      font-size:4vw;
+
+    }
+
+    #show {
+      font-size: 4vw;
+      width:30%;
+    }
+
+    #show:hover{
+      width:30%;
+    }
+
+    #answer {
+      font-size: 5vw;
+    }
+
+    #btnNext {
+      font-size: 4vw;
+      width: 40%;
+      height: 10vh;
+      bottom: 30px;
+      border-radius:40px;
+    }
+
+    #btnNext:hover {
+      width:40%;
+    }
+
+    #select_type {
+      font-size: 4vw;
+      font-weight: bold;
+      width: 20%;
+      height: 120px;
+      border-radius: 15px;
+
+      display:block;
+      position: absolute;
+      top:20px;
+      left:30px;
+      padding:0;
+      margin:0;
+
+    }
+
+    #correctness {
+      font-size: 5vw;
+    }
+}
