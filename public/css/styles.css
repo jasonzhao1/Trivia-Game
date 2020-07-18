@@ -210,10 +210,10 @@ form {
 }
 
 .surround {
- position: fixed;
- bottom: 18%;
+ position: static;
+ /* bottom: 18%;
  left:50%;
- transform: translate(-50%,-50%);
+ transform: translate(-50%,-50%); */
  border-radius: 20px;
  background-color: #FAF0AF ;
  width:75%;
@@ -229,10 +229,10 @@ form {
 
 #answer_area {
 
-  position:absolute;
-  bottom:40%;
+  position:static;
+  /* bottom:40%;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%,0); */
   width:100%;
 }
 
@@ -319,11 +319,11 @@ input {
 
 
 #btnNext{
-  position: fixed;
-  bottom: 20vw;
+  position: static;
+  /* bottom: 20vw;
   left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
+  transform: translate(-50%, -50%); */
+  display: inline;
   width: 250px;
   height: 50px;
   line-height: 40px;
@@ -438,37 +438,41 @@ input {
 
   #answer_area {
     height: 30%;
-    position: fixed;
+    position: static;
     top: 40%;
     text-align: center;
+    margin-top:10%;
 
 
   }
 
   #btnNext {
-    position: fixed;
-    bottom: 10%;
+    position: static;
+    margin:auto;
+
   }
 
   #surround {
-    position: fixed;
-    bottom: 15%;
+    position: static;
+    margin: 3% auto;
+
   }
 
   #show {
+    position: static;
     width: 20%;
     height:10%;
     border-radius: 20px;
     font-size: 20px;
     line-height: 15px;
+    margin-top: 5%;
 
   }
 
   #question {
     width:75%;
-    position:fixed;
-    left:50%;
-    transform: translate(-50%,0);
+    position:static;
+    margin: auto;
   }
 
   #user_input {
@@ -477,63 +481,101 @@ input {
     left:0;
     width:75%;
 
-
-
-
   }
   #correctness {
     width:60%;
+
+    font-size: 1.5vw;
     margin:auto;
     margin-bottom:20px;
   }
 
   #submit {
     display:block;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%,0);
+    position: static;
+    margin: auto;
     width: 20%;
-    height: 10%;
+    height: 60px;
     margin-top: 30px;
     font-size:20px;
   }
 }
 
 @media (max-width: 1200px) and (orientation:landscape) {
+
+  #select_type {
+    font-size: 2vw;
+    font-weight: bold;
+    width: 20%;
+    height: 10vh;
+    border-radius: 15px;
+
+    display:block;
+    position: absolute;
+    top:20px;
+    left:30px;
+    padding:0;
+    margin:0;
+
+  }
+
+  #trivia_title {
+    position: static;
+    margin: 25px auto;
+  }
+
   #btnNext {
-    position: fixed;
-    bottom: 10px;
+    position: static;
+    margin: 5% auto;
   }
 
   #surround {
-    position: fixed;
-    bottom: 16%;
+    position: static;
+    margin: 10px auto;
+    height: 40px;
   }
+
+ #correctness {
+   position: static;
+   margin-top : 50px;
+ }
 
   #answer {
     position: static;
-    line-height: 5px;
+    margin:auto;
+
   }
 
   #submit {
-    position:relative;
-    top: 70px;
+    position: static;
+    margin:auto;
+
   }
 
   #user_input {
-    position: relative;
-    top:70px;
+    position: static;
+    margin:auto;
+  }
+
+  #show {
+    position: static;
+    margin:20px auto;
   }
 
   #question {
-    position:relative;
-    bottom:30px;
+    position:static;
+    margin:auto;
+
   }
 }
 
 @media (min-height:700px) and (orientation: portrait) {
 
   /* index.html */
+
+  body {
+    text-align:center;
+  }
 
   #start_h {
     font-size: 7vw;
@@ -558,11 +600,13 @@ input {
   }
 
   #selfChose{
+    font-size: 30px;
     width: 30%;
     height: 10vw;
   }
 
   #start_random {
+    font-size: 30px;
     width: 40%;
     height:10vw;
     margin: 5%;
@@ -591,21 +635,39 @@ input {
       padding:0;
     }
 
+
+        #answer_area {
+
+          position: static;
+          left:0;
+          text-align:center;
+          padding-top:100px;
+
+        }
+
     #user_input {
+      border-radius: 50px;
+      position:static;
+      left:0;
       font-size:6vw;
       height:10vw;
     }
 
     #submit {
+      border-radius:50px;
+      position:static;
+      left:0;
       font-size:4vw;
-      height:13.5vw;
+      height:10.5vw;
       text-align:center;
 
     }
 
     #show {
+      position: static;
       font-size: 4vw;
       width:30%;
+      margin-top: 40px;
     }
 
     #show:hover{
@@ -617,16 +679,19 @@ input {
     }
 
     #btnNext {
+      position:static;
       font-size: 4vw;
       width: 40%;
       height: 7vh;
-      bottom: 20px;
+
       border-radius:40px;
+      margin-top:50px;
     }
 
     #btnNext:hover {
+      position: static;
       width:40%;
-      bottom: 20px;
+
     }
 
     #select_type {
@@ -647,13 +712,12 @@ input {
 
     #correctness {
       font-size: 5vw;
+
     }
 
-    #answer_area {
-      bottom:35%;
-    }
 
     #surround {
-      bottom: 14%;
+      position: static;
+      margin: auto;
     }
 }
