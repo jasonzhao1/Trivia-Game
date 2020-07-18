@@ -577,7 +577,7 @@ input {
 
   #or {
     position: relative;
-    top: 3vh;
+
   }
     #question {
       font-size:6vw;
@@ -598,7 +598,7 @@ input {
 
     #submit {
       font-size:4vw;
-      height:14vw;
+      height:13.5vw;
       text-align:center;
 
     }
@@ -626,6 +626,7 @@ input {
 
     #btnNext:hover {
       width:40%;
+      bottom: 15vw;
     }
 
     #select_type {
@@ -646,5 +647,9 @@ input {
 
     #correctness {
       font-size: 5vw;
+    }
+
+    #answer_area {
+        bottom:35%;
     }
 }
