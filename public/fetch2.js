@@ -83,7 +83,9 @@ function myFunction() {
   baseURL = "https://jservice.io/api/clues";
 
   for (i = 0; i < len; i++) {
-
+   if (i == 6 || i == 8) {
+     continue;
+   }
 
 
     if (btnArr[i].didClick === true) { //auto-refreshes javascript
@@ -104,19 +106,20 @@ function myFunction() {
   //document.getElementById("form1").submit();
 
 }
-
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 
 
 function loadChosenQuestion(questionBank) {
-  answer = questionBank[questionCounter].answer;
-  question = questionBank[questionCounter].question;
+  var len = questionBank.length;
+  var number = Math.floor(Math.random() * len);
+
+  answer = questionBank[number].answer;
+  question = questionBank[number].question;
   document.getElementById("question").innerHTML = question;
   document.getElementById("answer").innerHTML = answer;
-  questionCounter += 1;
-  // alert(questionCounter);
-  if (questionCounter === questionBank.length - 1) {
-    alert("all questions answered");
-  }
+
 }
 
 // function loadChosenQuestion(questionBank) {
@@ -143,6 +146,7 @@ function getRandomQuestion() {
       temp_answer.innerHTML =  answer;
     })
   })
+
 }
 
 
@@ -165,6 +169,9 @@ const startBtn = document.getElementById("start");
 startBtn.addEventListener('click', function() {
   if (mode === "random") {
     getRandomQuestion();
+    while (question === "") {
+      getRandomQuestion();
+    }
     toggleDisplay();
     document.getElementById("select_type").classList.remove("invisible");
     document.getElementById("trivia_title").classList.remove("middle_title");
@@ -204,8 +211,11 @@ btnNext.addEventListener('click', function() {
   if (mode === "random") {
     getRandomQuestion();
 
+
+
   } else if (mode === "mark") {
     loadChosenQuestion(totalQuestions);
+
   }
 
   document.getElementById("correctness").innerHTML = "";
