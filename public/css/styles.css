@@ -271,7 +271,7 @@ input {
   font-weight:bold;
   position:relative;
 
-  vertical-align: top;
+  vertical-align: center;
 
 }
 
@@ -598,7 +598,7 @@ input {
 
     #submit {
       font-size:4vw;
-      height:10vw;
+      height:12vw;
 
     }
 
