@@ -252,18 +252,25 @@ input {
   border-radius: 20px;
   border-color: black;
   width: 50vw;
-  height: 7vw;
   text-align:center;
-  display:inline-block;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
   position:relative;
   right: 30px;
   font-size: 15px;
 }
 
 #submit {
-  display:inline-block;
-  width: 20vw;
-  height: 8vw;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+
+
   border-radius: 20px;
   border-color: black;
   background-color: white;
@@ -271,7 +278,7 @@ input {
   font-weight:bold;
   position:relative;
 
-  vertical-align: top;
+
 
 }
 
@@ -447,8 +454,8 @@ input {
   }
 
   #btnNext {
-    position: static;
-    margin:auto;
+    position: relative;
+    bottom: 10%;
 
   }
 
@@ -649,16 +656,19 @@ input {
       border-radius: 50px;
       position:static;
       left:0;
-      font-size:6vw;
-      height:10vw;
+      font-size:4vw;
+      padding: 3%;
+
     }
 
     #submit {
+      border-width: 0px;
       border-radius:50px;
       position:static;
       left:0;
       font-size:4vw;
-      height:10.5vw;
+      padding: 3%;
+
       text-align:center;
 
     }
