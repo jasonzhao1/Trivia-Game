@@ -79,7 +79,7 @@ form {
 
 .start_game {
   font-size: 20px;
-  position: fixed;
+  position: static;
   bottom: 30px;
   width: 50%;
 
